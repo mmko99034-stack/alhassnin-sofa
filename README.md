@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al-Hassanien Furniture</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="logo">Al-Hassanien Furniture</div>
+  <nav>
+    <a href="#products">الكنبات</a>
+    <a href="#checkout">الدفع</a>
+    <button id="cart-btn">🛒 <span id="cart-count">0</span></button>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>أفضل الكنبات العصرية لمنزلك</h1>
+  <p>تصاميم فاخرة وأناقة لا مثيل لها</p>
+</section>
+
+<section id="products" class="products">
+  <div class="product-card">
+    <img src="images/sofa1.jpg" alt="كنبة كلاسيكية">
+    <h2>كنبة كلاسيكية</h2>
+    <p>تصميم فاخر ومريح</p>
+    <button onclick="addToCart('كنبة كلاسيكية')">أضف للسلة</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/sofa2.jpg" alt="كنبة زاوية">
+    <h2>كنبة زاوية</h2>
+    <p>مثالية للعائلات</p>
+    <button onclick="addToCart('كنبة زاوية')">أضف للسلة</button>
+  </div>
+
+  <div class="product-card">
+    <img src="images/sofa3.jpg" alt="كنبة فاخرة">
+    <h2>كنبة فاخرة</h2>
+    <p>أناقة عصرية</p>
+    <button onclick="addToCart('كنبة فاخرة')">أضف للسلة</button>
+  </div>
+</section>
+
+<div id="cart-sidebar" class="cart-sidebar">
+  <h2>سلة التسوق</h2>
+  <ul id="cart-items"></ul>
+  <button onclick="toggleCheckout()">إتمام الطلب</button>
+</div>
+
+<section id="checkout" class="checkout hidden">
+  <h2>معلومات الطلب</h2>
+  <form id="checkout-form">
+    <input type="text" id="name" placeholder="الاسم الكامل" required>
+    <input type="text" id="phone" placeholder="رقم الهاتف" required>
+    <textarea id="address" placeholder="العنوان والتفاصيل" required></textarea>
+    <button type="submit">إرسال الطلب</button>
+  </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
