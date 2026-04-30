@@ -1,1 +1,9 @@
-# alhassnin-sofa
+#sofa-store/
+│
+├── index.html
+├── style.css
+├── script.js
+└── images/
+    ├── sofa1.jpg
+    ├── sofa2.jpg
+    └── sofa3.jpg
